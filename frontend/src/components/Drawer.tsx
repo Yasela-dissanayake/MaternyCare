@@ -4,6 +4,7 @@ import {
   DashboardIcon,
   NoticesIcon,
   ProfileIcon,
+  LogoutIcon,
 } from "../assets/icons/Icons";
 import { useState } from "react";
 const navLinks = [
@@ -23,6 +24,10 @@ const navLinks = [
     name: "Profile",
     icon: <ProfileIcon />,
   },
+  {
+    name: "Logout",
+    icon: <LogoutIcon />,
+  },
 ];
 
 const Drawer = () => {
@@ -30,22 +35,23 @@ const Drawer = () => {
 
   return (
     <div className="px-10 py-12 flex flex-col border border-r-1 w-80 h-screen">
-      <div className="logo-div flex space-x-3 items-center">
-        <img src={logo} className=""></img>
-        <span>Materny Care</span>
+      <div className="flex flex-col items-center justify-center">
+        <img src={logo} className="h-36"></img>
+        <h1 className="text-[#F580AB] text-2xl font-medium	">Materny Care</h1>
       </div>
 
-      <div className="mt-10 flex flex-col space-y-8">
+      <div className="mt-10 flex flex-col space-y-8 text-[#666666] ">
         {navLinks.map((item, index) => (
-          <div
+          <button
+            onClick={() => setActiveLink(index)}
             key={index}
             className={`flex items-center space-x-2 py-3 px-3 rounded-xl	 ${
               activeLink == index ? "text-[#0D99FF] bg-[#CAE9FF]" : ""
             }`}
           >
             {item.icon}
-            <span className="pl-1">{item.name}</span>
-          </div>
+            <span className="pl-1 ">{item.name}</span>
+          </button>
         ))}
       </div>
     </div>
