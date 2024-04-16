@@ -1,34 +1,6 @@
 import logo from "../assets/images/logo.png";
-import {
-  AppointmentsIcon,
-  DashboardIcon,
-  NoticesIcon,
-  ProfileIcon,
-  LogoutIcon,
-} from "../assets/icons/Icons";
+import { navLinks } from "../data/Data";
 import { useState } from "react";
-const navLinks = [
-  {
-    name: "Dashboard",
-    icon: <DashboardIcon />,
-  },
-  {
-    name: "Notices",
-    icon: <NoticesIcon />,
-  },
-  {
-    name: "Appointments",
-    icon: <AppointmentsIcon />,
-  },
-  {
-    name: "Profile",
-    icon: <ProfileIcon />,
-  },
-  {
-    name: "Logout",
-    icon: <LogoutIcon />,
-  },
-];
 
 const Drawer = () => {
   const [activeLink, setActiveLink] = useState(0);
@@ -49,7 +21,7 @@ const Drawer = () => {
               activeLink == index ? "text-[#0D99FF] bg-[#CAE9FF]" : ""
             }`}
           >
-            {item.icon}
+            <item.icon />
             <span className="pl-1 ">{item.name}</span>
           </button>
         ))}
