@@ -1,6 +1,7 @@
 import express,{ Application } from "express";
 import ip from 'ip';
 import cors from 'cors';
+import noticeRoutes from "./routes/notice.routes";
 
 export class App{
     private readonly app:Application;
@@ -24,7 +25,7 @@ export class App{
     }
 
     private routes(): void {
-        this.app.use('/notices',(req,res) => {});
+        this.app.use('/notices', noticeRoutes);
         this.app.get('/',(req,res) => {
             res.status(200).send({message: 'Server is up'})
         });
