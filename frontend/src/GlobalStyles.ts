@@ -4,23 +4,33 @@ export const bgStyles = {
 
   // Blue
   primaryBlue: "bg-[#0D99FF]",
+  primaryBlueHover: "hover:bg-[#0D99FF]",
+
   secondaryBlue: "bg-[#80CAFF]",
-  terriaaryBlue: "bg-[#B3DFFF]",
+  secondaryBlueHover: "hover:bg-[#80CAFF]",
+
+  terriaryBlue: "bg-[#B3DFFF]",
+  terriaryBlueHover: "hover:bg-[#B3DFFF]",
 
   // Purple
   primaryPurple: "bg-[#BA97FE]",
+  primaryPurpleHover: "hover:bg-[#BA97FE]",
+
   secondaryPurple: "bg-[#DDCDFE]",
-  terriaaryPurple: "bg-[#EEE6FE]",
+  secondaryPurpleHover: "hover:bg-[#DDCDFE]",
+
+  terriaryPurple: "bg-[#EEE6FE]",
+  terriaryPurpleHover: "hover:bg-[#EEE6FE]",
 
   // Pink
   primaryPink: "bg-[#F580AB]",
   secondaryPink: "bg-[#F9B8D0]",
-  terriaaryPink: "bg-[#FBD0E0]",
+  terriaryPink: "bg-[#FBD0E0]",
 
   // Green
   primaryGreen: "bg-[#4CDFB5]",
   secondaryGreen: "bg-[#A8F0DB]",
-  terriaaryGreen: "bg-[#BCF5E4]",
+  terriaryGreen: "bg-[#BCF5E4]",
 };
 
 export const textStyles = {
@@ -31,17 +41,17 @@ export const textStyles = {
   // Blue
   primaryBlue: "text-[#0D99FF]",
   secondaryBlue: "text-[#80CAFF]",
-  terriaaryBlue: "text-[#B3DFFF]",
+  terriaryBlue: "text-[#B3DFFF]",
 
   // Purple
   primaryPurple: "text-[#BA97FE]",
   secondaryPurple: "text-[#DDCDFE]",
-  terriaaryPurple: "text-[#EEE6FE]",
+  terriaryPurple: "text-[#EEE6FE]",
 
   // Pink
   primaryPink: "text-[#F580AB]",
   secondaryPink: "text-[#F9B8D0]",
-  terriaaryPink: "text-[#FBD0E0]",
+  terriaryPink: "text-[#FBD0E0]",
 
   // Green
   primaryGreen: "text-[#4CDFB5]",
