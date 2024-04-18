@@ -11,21 +11,27 @@ dependencies:
   '@emotion/styled':
     specifier: ^11.11.5
     version: 11.11.5(@emotion/react@11.11.4)(@types/react@18.2.77)(react@18.2.0)
+<<<<<<< HEAD
   '@headlessui/react':
     specifier: ^1.7.19
     version: 1.7.19(react-dom@18.2.0)(react@18.2.0)
   '@mui/base':
     specifier: 5.0.0-beta.40
     version: 5.0.0-beta.40(@types/react@18.2.77)(react-dom@18.2.0)(react@18.2.0)
+=======
+>>>>>>> 133dce66 (feat: primary button component created)
   '@mui/icons-material':
     specifier: ^5.15.15
     version: 5.15.15(@mui/material@5.15.15)(@types/react@18.2.77)(react@18.2.0)
   '@mui/material':
     specifier: ^5.15.15
     version: 5.15.15(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@types/react@18.2.77)(react-dom@18.2.0)(react@18.2.0)
+<<<<<<< HEAD
   '@mui/x-date-pickers':
     specifier: ^7.2.0
     version: 7.2.0(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@mui/material@5.15.15)(@types/react@18.2.77)(dayjs@1.11.10)(react-dom@18.2.0)(react@18.2.0)
+=======
+>>>>>>> 133dce66 (feat: primary button component created)
   autoprefixer:
     specifier: ^10.4.19
     version: 10.4.19(postcss@8.4.38)
@@ -733,6 +739,7 @@ packages:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
     dev: false
 
+<<<<<<< HEAD
   /@headlessui/react@1.7.19(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Ll+8q3OlMJfJbAKM/+/Y2q6PPYbryqNTXDbryx7SXLIDamkF6iQFbriYHga0dY44PvDhvvBWCx1Xj4U5+G4hOw==}
     engines: {node: '>=10'}
@@ -746,6 +753,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
+=======
+>>>>>>> 133dce66 (feat: primary button component created)
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
@@ -803,10 +812,13 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
+<<<<<<< HEAD
   /@kurkle/color@0.3.2:
     resolution: {integrity: sha512-fuscdXJ9G1qb7W8VdHi+IwRqij3lBkosAm4ydQtEmbY58OzHXqQhvlxqEkoz0yssNVn38bcpRWgA9PP+OGoisw==}
     dev: false
 
+=======
+>>>>>>> 133dce66 (feat: primary button component created)
   /@mui/base@5.0.0-beta.40(@types/react@18.2.77)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-I/lGHztkCzvwlXpjD2+SNmvNQvB4227xBXhISPjEaJUXGImOQ9f3D2Yj/T3KasSI/h0MLWy74X0J6clhPmsRbQ==}
     engines: {node: '>=12.0.0'}
@@ -984,6 +996,7 @@ packages:
       react: 18.2.0
       react-is: 18.2.0
     dev: false
+<<<<<<< HEAD
 
   /@mui/x-date-pickers@7.2.0(@emotion/react@11.11.4)(@emotion/styled@11.11.5)(@mui/material@5.15.15)(@types/react@18.2.77)(dayjs@1.11.10)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-hsXugZ+n1ZnHRYzf7+PFrjZ44T+FyGZmTreBmH0M2RUaAblgK+A1V3KNLT+r4Y9gJLH+92LwePxQ9xyfR+E51A==}
@@ -1038,6 +1051,8 @@ packages:
     transitivePeerDependencies:
       - '@types/react'
     dev: false
+=======
+>>>>>>> 133dce66 (feat: primary button component created)
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1193,6 +1208,7 @@ packages:
     dev: true
     optional: true
 
+<<<<<<< HEAD
   /@tanstack/react-virtual@3.5.0(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-rtvo7KwuIvqK9zb0VZ5IL7fiJAEnG+0EiFZz8FUOs+2mhGqdGmjKIaT1XU7Zq0eFqL0jonLlhbayJI/J2SA/Bw==}
     peerDependencies:
@@ -1211,6 +1227,11 @@ packages:
   /@types/babel__core@7.20.5:
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
     dependencies:
+=======
+  /@types/babel__core@7.20.5:
+    resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
+    dependencies:
+>>>>>>> 133dce66 (feat: primary button component created)
       '@babel/parser': 7.24.4
       '@babel/types': 7.24.0
       '@types/babel__generator': 7.6.8
@@ -1780,10 +1801,13 @@ packages:
       fsevents: 2.3.3
     dev: false
 
+<<<<<<< HEAD
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
     dev: false
 
+=======
+>>>>>>> 133dce66 (feat: primary button component created)
   /clsx@2.1.0:
     resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
     engines: {node: '>=6'}
