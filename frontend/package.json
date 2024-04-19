@@ -13,7 +13,10 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@headlessui/react": "^1.7.19",
+=======
+>>>>>>> a8e3e9e3 (feat: notification bell icon added with badge)
     "@mui/base": "5.0.0-beta.40",
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
