@@ -1,6 +1,8 @@
 import logo from "../assets/images/logo.png";
 import { navLinks } from "../data/Data";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useMatch } from "react-router-dom";
 
 const Drawer = () => {
   const [activeLink, setActiveLink] = useState(0);
@@ -13,18 +15,23 @@ const Drawer = () => {
       </div>
 
       <div className="mt-10 flex flex-col space-y-8 text-[#666666] ">
-        {navLinks.map((item, index) => (
-          <button
-            onClick={() => setActiveLink(index)}
-            key={index}
-            className={`flex items-center space-x-2 py-3 px-3 rounded-xl	 ${
-              activeLink == index ? "text-[#0D99FF] bg-[#CAE9FF]" : ""
-            }`}
-          >
-            <item.icon />
-            <span className="pl-1 ">{item.name}</span>
-          </button>
-        ))}
+        {navLinks.map((item, index) => {
+          const match = useMatch(item.path);
+
+          return (
+            <NavLink to={item.path} key={index}>
+              <button
+                // onClick={() => setActiveLink(index)}
+                className={`flex items-center space-x-2 py-3 px-3 rounded-xl w-full ${
+                  match ? "text-[#0D99FF] bg-[#CAE9FF]" : ""
+                }`}
+              >
+                <item.icon />
+                <span className="pl-1 ">{item.name}</span>
+              </button>
+            </NavLink>
+          );
+        })}
       </div>
     </div>
   );
