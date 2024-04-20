@@ -50,7 +50,7 @@ function ServerDay(
       overlap="circular"
       badgeContent={
         isSelected ? (
-          <div className="w-3 h-3 bg-[#F580AB] rounded-full" />
+          <div className="w-3 h-3 bg-[#BA97FE] rounded-full" />
         ) : undefined
       }
     >
@@ -58,11 +58,7 @@ function ServerDay(
         {...other}
         outsideCurrentMonth={outsideCurrentMonth}
         day={day}
-        style={
-          isSelected
-            ? { background: "#FBD0E0", color: "white", fontWeight: "bold" }
-            : {}
-        }
+        style={isSelected ? { background: "#DDCDFE", fontWeight: "bold" } : {}}
       />
     </Badge>
   );
