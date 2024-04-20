@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Badge from "@mui/material/Badge";
 import IconButton from "@mui/material/IconButton";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsIcon from "@mui/icons-material/Settings";
-import Avatar from "@mui/material/Avatar";
 
 const Drawer: React.FC = () => {
   return (
@@ -26,13 +25,40 @@ const Drawer: React.FC = () => {
             className="rounded-full border-2 border-white "
             src="https://randomuser.me/api/portraits/women/94.jpg"
           />
-          {/* <Avatar
-            alt="Remy Sharp"
-            src="https://randomuser.me/api/portraits/women/94.jpg"
-            sx={{}}
-          /> */}
         </div>
       </div>
+      <div className="bg-[#F7FBFF] rounded-2xl text-center py-4 px-8 mt-24">
+        <div className="justify-center flex">
+          <img
+            className="rounded-full border-2 border-white w-24 h-24"
+            src="https://randomuser.me/api/portraits/women/94.jpg"
+          />
+        </div>
+        <h1>Ushani Anuruddhika</h1>
+        <p className="text-xs">
+          30 years old |
+          <span>
+            <NotificationsNoneIcon />
+          </span>
+          Badulla, Srilanka
+        </p>
+        <div className="flex flex-row justify-evenly">
+          <div>
+            <p>Blodd</p>
+            <p>O+</p>
+          </div>
+          <div>
+            <p>Blodd</p>
+            <p>O+</p>
+          </div>
+          <div>
+            <p>Blodd</p>
+            <p>O+</p>
+          </div>
+        </div>
+      </div>
+      <div>3</div>
+      <div>4</div>
     </div>
   );
 };
