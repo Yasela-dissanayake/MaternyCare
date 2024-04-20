@@ -4,6 +4,7 @@ import IconButton from "@mui/material/IconButton";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SettingsIcon from "@mui/icons-material/Settings";
+import MUICalendar from "./MUICalendar";
 
 const Drawer: React.FC = () => {
   return (
@@ -60,7 +61,9 @@ const Drawer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div>3</div>
+      <div className="mt-10">
+        <MUICalendar />
+      </div>
       <div>4</div>
     </div>
   );
