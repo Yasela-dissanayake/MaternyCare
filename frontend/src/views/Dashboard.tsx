@@ -1,6 +1,6 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import logo from "../assets/logo.png";
+import logo from "../assets/images/logo.png";
 
 const Dashboard = () => {
   return (
@@ -33,7 +33,9 @@ const Dashboard = () => {
       </div>
       <div className="grid grid-cols-3 gap-5">
         <div className="bg-red-100 pt-9 pl-7 h-36 rounded-lg grid grid-cols-2">
-          <img src={logo} alt="" />
+          <div>
+            <img src={logo} alt="" className="h-12" />
+          </div>
           <div>
             <h1>5 kicks</h1>
             <h1>Kick count</h1>
