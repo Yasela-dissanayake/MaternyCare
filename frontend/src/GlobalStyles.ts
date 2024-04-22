@@ -9,6 +9,8 @@ export const bgStyles = {
   secondaryBlue: "bg-[#80CAFF]",
   secondaryBlueHover: "hover:bg-[#80CAFF]",
 
+  loginHover: "hover:bg-[#33C2FF]",
+
   terriaryBlue: "bg-[#B3DFFF]",
   terriaryBlueHover: "hover:bg-[#B3DFFF]",
 

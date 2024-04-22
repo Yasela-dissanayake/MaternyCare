@@ -6,6 +6,8 @@ const LandingPage = () => {
       <PrimaryButton label="Login" onClick={() => {}} />
       <div className="p-2" />
       <PrimaryButton label="Registration" onClick={() => {}} />
+      <div className="p-2" />
+      <PrimaryButton label="Login" onClick={() => {}} />
     </div>
   );
 };
