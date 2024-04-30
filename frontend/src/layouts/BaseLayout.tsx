@@ -7,7 +7,9 @@ const BaseLayout = () => {
   return (
     <div className="flex bg-[#F5F5F5]">
       <Drawer />
-      <Outlet />
+      <div className="lg:ml-[300px] ml-0 w-full ">
+        <Outlet />
+      </div>
       <RightBar />
     </div>
   );

@@ -4,13 +4,13 @@ import logo from "../assets/images/logo.png";
 
 const Dashboard = () => {
   return (
-    <div className="w-3/5 mx-11 my">
+    <div className="mx-11 my ">
       <div className="flex justify-between ml-4 mt-7">
         <p>
           Pages <span> / Dashboard</span>
         </p>
 
-        <div className="flex items-center w-1/3 relative">
+        <div className="flex items-center relative">
           <SearchIcon className="absolute left-3 " />
           <input
             className="border-2 border-gray-300 bg-white h-10 pl-10 pr-16 rounded-lg text-sm focus:outline-none "
