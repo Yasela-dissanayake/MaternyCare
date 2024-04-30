@@ -59,4 +59,7 @@ export const textStyles = {
   primaryGreen: "text-[#4CDFB5]",
   secondaryGreen: "text-[#A8F0DB]",
   terriaaryGreen: "text-[#BCF5E4]",
+
+  //Gray
+  primaryGray: "text-[#838383]",
 };
