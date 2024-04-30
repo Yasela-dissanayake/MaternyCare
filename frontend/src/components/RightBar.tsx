@@ -9,7 +9,7 @@ import MUICalendar from "./MUICalendar";
 
 const Drawer: React.FC = () => {
   return (
-    <div className="px-6 pt-4 flex flex-col bg-white rounded-l-2xl w-1/5 ">
+    <div className="px-6 pt-4 hidden lg:flex flex-col bg-white rounded-l-2xl w-[300px] ml-auto ">
       <div className="grid grid-cols-3 gap-4 items-center mx-5">
         <div>
           <IconButton aria-label="show new notifications" color="inherit">
