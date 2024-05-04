@@ -1,6 +1,11 @@
 import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import logo from "../assets/images/logo.png";
+import DashboardStatCard from "../components/DashboardStatCard";
+
+import feet from "../assets/images/feet.png";
+import fire from "../assets/images/fire.png";
+import water from "../assets/images/drops.png";
 
 const Dashboard = () => {
   return (
@@ -10,7 +15,7 @@ const Dashboard = () => {
           Pages <span> / Dashboard</span>
         </p>
 
-        <div className="flex items-center relative">
+        <div className="lg:flex items-center relative hidden ">
           <SearchIcon className="absolute left-3 " />
           <input
             className="border-2 border-gray-300 bg-white h-10 pl-10 pr-16 rounded-lg text-sm focus:outline-none "
@@ -26,21 +31,15 @@ const Dashboard = () => {
           Hello <span className="font-semibold">Ushani,</span>
         </h1>
         <p>
-          Have a nice day and don’t forget to take care of <br />
-          your health!
+          Every new life brings endless possibilities. Embrace the journey with
+          love and joy.{" "}
         </p>
-        <h5 className="mt-3">Learn More </h5>
+        {/* <h5 className="mt-3">Learn More </h5> */}
       </div>
-      <div className="grid grid-cols-3 gap-5">
-        <div className="bg-white pt-9 pl-7 h-36 rounded-lg grid grid-cols-2">
-          <div>{/* <img src={logo} alt="" className="h-12" /> */}</div>
-          <div>
-            {/* <h1>5 kicks</h1>
-            <h1>Kick count</h1> */}
-          </div>
-        </div>
-        <div className="bg-white pt-9 pl-7 h-36 rounded-lg"></div>
-        <div className="bg-white pt-9 pl-7 h-36 rounded-lg"></div>
+      <div className="grid  sm:grid-cols-3 grid-cols-2 gap-8">
+        <DashboardStatCard image={feet} color="bg-[#F9B8D0]" />
+        <DashboardStatCard image={fire} color="bg-[#A8F0DB]" />
+        <DashboardStatCard image={water} color="bg-[#80CAFF]" />
       </div>
     </div>
   );
