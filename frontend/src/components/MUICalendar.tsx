@@ -109,7 +109,7 @@ export default function DateCalendarServerRequest() {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DateCalendar
-        sx={{ width: "100%" }}
+        sx={{}}
         defaultValue={initialValue}
         loading={isLoading}
         onMonthChange={handleMonthChange}
