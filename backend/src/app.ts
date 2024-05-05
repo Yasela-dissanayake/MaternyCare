@@ -38,7 +38,7 @@ export class App {
           new HttpResponse(
             Code.OK,
             Status.OK,
-            "Welcome to the notices api v1.0"
+            "Welcome to the MaternyCare api v1.0"
           )
         );
     });
