@@ -66,6 +66,7 @@ export const getNotices = async (
 
   try {
     const pool = await connection();
+<<<<<<< HEAD
     const result: any = await pool.query(QUERY.SELECT_NOTICES);
     return res
       .status(Code.OK)
@@ -216,5 +217,11 @@ export const deleteNotice = async (
           "An Error Occurred"
         )
       );
+=======
+    const result: any = await pool.query(QUERY.SELECT_NOTICE);
+    return res.status(200).json(result[0]);
+  } catch (error: unknown) {
+    return res.status(500);
+>>>>>>> 70e8ba9b (WIP)
   }
 };
