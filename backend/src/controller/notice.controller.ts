@@ -206,5 +206,15 @@ export const deleteNotice = async (
         );
     }
   } catch (error: unknown) {
-   
-}
+    console.error(error);
+    return res
+      .status(Code.INTERNAL_SERVER_ERROR)
+      .send(
+        new HttpResponse(
+          Code.INTERNAL_SERVER_ERROR,
+          Status.INTERNAL_SERVER_ERROR,
+          "An Error Occurred"
+        )
+      );
+  }
+};
