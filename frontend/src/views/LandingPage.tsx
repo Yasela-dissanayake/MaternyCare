@@ -19,17 +19,9 @@ const LandingPage = () => {
         </div>
       </div>
 
-<     div className="">
+      <div className="mx-96">
         <Carousel />
       </div>
-
-
-
-
-
-
-
-
   
     </div>
   );

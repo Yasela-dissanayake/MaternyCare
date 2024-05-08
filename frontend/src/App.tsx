@@ -6,6 +6,8 @@ import Registration from "./views/Registration";
 import Dashboard from "./views/Dashboard";
 import Notices from "./views/Notices";
 
+
+
 // You can add your routes here
 // Add a baselayout too if needed
 
