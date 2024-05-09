@@ -26,9 +26,9 @@ export default function Carousel() {
         centeredSlides={true}
         slidesPerView={3}
         coverflowEffect={{
-          rotate: 10,
+          rotate: 20,
           stretch: 0,
-          depth: 50,
+          depth: 100,
           modifier: 1,
           slideShadows: false,
         }}
@@ -36,18 +36,18 @@ export default function Carousel() {
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className="slide" color="#4aa832">
-          <div className='border-orange-700 border-2 rounded-lg'>
+        <SwiperSlide className="slide ">
+          <div className='border-pink-500 border-2 rounded-3xl bg-[#FBD0E0]'>
             <img className='my-10' src={Mother} alt="Mother" />
           </div>
         </SwiperSlide>
         <SwiperSlide className="slide">
-        <div className='border-orange-700 border-2 rounded-lg'>
+        <div className='border-pink-500 border-2 rounded-3xl bg-[#FBD0E0]'>
             <img className='my-10' src={PHM} alt="Mother" />
           </div>
         </SwiperSlide>
         <SwiperSlide className="slide">
-        <div className='border-orange-700 border-2 rounded-3xl'>
+        <div className='border-pink-500 border-2 rounded-3xl bg-[#FBD0E0]'>
             <img className='my-10' src={MOH} alt="Mother" />
           </div>
         </SwiperSlide>
