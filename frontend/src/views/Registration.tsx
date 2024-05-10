@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
+import RegistrationPage_1 from "../components/RegistrationPage_1";
 
 const Registration = () => {
   return (
@@ -15,6 +16,10 @@ const Registration = () => {
           </h1>
         </div>
     
+        <div>
+          <RegistrationPage_1 />
+        </div>
+
     </div>
   );
 };
