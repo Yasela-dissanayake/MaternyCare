@@ -21,28 +21,28 @@ services:
       SERVICE_NAME: mysqldb
     networks:
       - internalnet
-  nodeapp:
-    container_name: nodeappcontainer
-    build: .
-    image: nodeapp:v1
-    ports: 
-      - 3000:3000
-    expose:
-      - 3000
-    depends_on:
-      - mysqldb
-    environment:
-      DB_HOST: mysqldb 
-      DB_USER: admin
-      DB_PASSWORD: 'letmein'
-      DB_NAME: maternycaredb   
-      DB_PORT: 3306
-      DB_CONNECTION_LIMIT: 100
-      SERVER_PORT: 3000
-      SERVICE_TAGS: prod
-      SERVICE_NAME: nodeappservice
-    networks:
-      - internalnet
+  # nodeapp:
+  #   container_name: nodeappcontainer
+  #   build: .
+  #   image: nodeapp:v1
+  #   ports: 
+  #     - 3000:3000
+  #   expose:
+  #     - 3000
+  #   depends_on:
+  #     - mysqldb
+  #   environment:
+  #     DB_HOST: mysqldb 
+  #     DB_USER: admin
+  #     DB_PASSWORD: 'letmein'
+  #     DB_NAME: maternycaredb   
+  #     DB_PORT: 3306
+  #     DB_CONNECTION_LIMIT: 100
+  #     SERVER_PORT: 3000
+  #     SERVICE_TAGS: prod
+  #     SERVICE_NAME: nodeappservice
+  #   networks:
+  #     - internalnet
 networks:
   internalnet:
     driver: bridge
