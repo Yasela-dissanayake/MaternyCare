@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import axios from "axios";
 import { Rings } from "react-loader-spinner";
+import PrimaryButton from "../components/PrimaryButton";
 
 const Notices = () => {
   const BASE_URL = "http://localhost:5000/";
@@ -52,8 +53,15 @@ const Notices = () => {
           />
         </div>
       </div>
-      <h1 className="mt-9 mb-4">Notices</h1>
-      <div className="columns-2 gap-4">
+      <div className="flex justify-between my-4 items-center ">
+        <h1 className="mt-9 mb-4">Notices</h1>
+        <div className="flex justify-end">
+          <button className="bg-[#CAE9FF] py-2 px-4 rounded-lg text-[#0D99FF] hover:bg-[#0D99FF] hover:text-white hover:animate-fadeIn active:bg-[#CAE9FF] active:text-[#0D99FF]">
+            Add Notice
+          </button>
+        </div>
+      </div>
+      <div className="columns-1 sm:columns-2 gap-10">
         {loading ? (
           <Rings
             visible={true}
