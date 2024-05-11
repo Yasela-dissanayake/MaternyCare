@@ -69,16 +69,23 @@ const Notices = () => {
             (
               notice: { title: string; message: string; created_at: string },
               index: number
-            ) => (
-              <div
-                className="px-8 py-5 text-white rounded-2xl mb-8 animate-fadeIn"
-                style={{ backgroundColor: colors[index % colors.length] }}
-              >
-                <h1 className="mb-2">{notice.title}</h1>
-                <p>{notice.message}</p>
-                <p>{notice.created_at}</p>
-              </div>
-            )
+            ) => {
+              const date = new Date(notice.created_at);
+              const formattedDate = `${date.getFullYear()}-${String(
+                date.getMonth() + 1
+              ).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+
+              return (
+                <div
+                  className="px-8 py-5 text-white rounded-2xl mb-8 animate-fadeIn shadow-md"
+                  style={{ backgroundColor: colors[index % colors.length] }}
+                >
+                  <h1 className="mb-2 font-medium text-xl">{notice.title}</h1>
+                  <p className="font-normal text-sm">{notice.message}</p>
+                  <p className="text-xs mt-3">Posted on: {formattedDate}</p>
+                </div>
+              );
+            }
           )
         )}
       </div>
