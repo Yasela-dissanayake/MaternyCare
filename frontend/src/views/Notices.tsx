@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import axios from "axios";
+import { Rings } from "react-loader-spinner";
 
 const Notices = () => {
   const BASE_URL = "http://localhost:5000/";
   const [notices, setNotices] = useState([]);
   const [loading, setLoading] = useState(false);
-  const colors = ["#BA97FE", "#A3D8F1", "#F1A3BC", "#F1CB3A", "#3AF16C"];
+  const colors = ["#BA97FE", "#0D99FF", "#F580AB", "#F1CB3A", "#3AF16C"];
 
   useEffect(() => {
     const getNotices = () => {
@@ -53,19 +54,31 @@ const Notices = () => {
       </div>
       <h1 className="mt-9 mb-4">Notices</h1>
       <div className="columns-2 gap-4">
-        {notices.map(
-          (
-            notice: { title: string; message: string; created_at: string },
-            index: number
-          ) => (
-            <div
-              className="px-8 py-5 text-white rounded-2xl mb-8"
-              style={{ backgroundColor: colors[index % colors.length] }}
-            >
-              <h1 className="mb-2">{notice.title}</h1>
-              <p>{notice.message}</p>
-              <p>{notice.created_at}</p>
-            </div>
+        {loading ? (
+          <Rings
+            visible={true}
+            height="80"
+            width="80"
+            color="#BA97FE"
+            ariaLabel="rings-loading"
+            wrapperStyle={{}}
+            wrapperClass=""
+          />
+        ) : (
+          notices.map(
+            (
+              notice: { title: string; message: string; created_at: string },
+              index: number
+            ) => (
+              <div
+                className="px-8 py-5 text-white rounded-2xl mb-8 animate-fadeIn"
+                style={{ backgroundColor: colors[index % colors.length] }}
+              >
+                <h1 className="mb-2">{notice.title}</h1>
+                <p>{notice.message}</p>
+                <p>{notice.created_at}</p>
+              </div>
+            )
           )
         )}
       </div>
