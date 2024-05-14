@@ -29,6 +29,7 @@ export class App {
     this.app.use(express.json());
   }
 
+
   private routes(): void {
     this.app.use("/notices", noticeRoutes);
     this.app.get("/", (req, res) => {

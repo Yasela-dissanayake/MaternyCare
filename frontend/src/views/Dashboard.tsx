@@ -1,12 +1,4 @@
 import React from "react";
-import SearchIcon from "@mui/icons-material/Search";
-import logo from "../assets/images/logo.png";
-import DashboardStatCard from "../components/DashboardStatCard";
-
-import feet from "../assets/images/feet.png";
-import fire from "../assets/images/fire.png";
-import water from "../assets/images/drops.png";
-import LineChart from "../components/LineChart";
 
 const Dashboard = () => {
   return (
