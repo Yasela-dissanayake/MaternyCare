@@ -22,12 +22,20 @@ ChartJS.register(
 );
 
 const LineChart = () => {
-  const options = {};
+  const options = { responsive: true, maintainAspectRatio: true };
   const data = {
-    labels: ["Mon", "Tue", "Wed", "Wed", "Wed", "Wed", "Wed"],
+    labels: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
     datasets: [
       {
-        label: "steps",
+        label: "Steps",
         data: [3000, 2000, 1000, 200, 2000, 1000, 5000],
         borderColor: "rgb(75,192,192)",
       },
