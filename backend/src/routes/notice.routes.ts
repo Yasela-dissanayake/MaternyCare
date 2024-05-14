@@ -18,5 +18,3 @@ noticeRoutes
   .delete(deleteNotice);
 
 export default noticeRoutes;
-
-export default noticeRoutes;
