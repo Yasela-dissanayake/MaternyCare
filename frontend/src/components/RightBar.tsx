@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import Badge from "@mui/material/Badge";
 import IconButton from "@mui/material/IconButton";
@@ -15,31 +14,11 @@ const Drawer: React.FC = () => {
       <div className="grid grid-cols-3 gap-4 items-center mx-5">
         <div>
           <IconButton aria-label="show new notifications" color="inherit">
-=======
-import React, { useState } from "react";
-import Badge from "@mui/material/Badge";
-import IconButton from "@mui/material/IconButton";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-
-const Drawer: React.FC = () => {
-  const [activeLink, setActiveLink] = useState<number>(0);
-
-  return (
-    <div className="px-10 py-12 flex flex-col border border-r-0 w-80 h-screen ml-auto">
-      <div className="grid grid-cols-3 gap-4">
-        <div>
-          <IconButton
-            aria-label="show new notifications"
-            color="inherit"
-            sx={{ padding: 1, width: "auto" }}
-          >
->>>>>>> a8e3e9e3 (feat: notification bell icon added with badge)
             <Badge badgeContent={5} color="error">
               <NotificationsNoneIcon />
             </Badge>
           </IconButton>
         </div>
-<<<<<<< HEAD
         <div>
           <IconButton aria-label="show new notifications" color="inherit">
             <SettingsIcon />
@@ -120,11 +99,6 @@ const Drawer: React.FC = () => {
         </div>
       </div>
       <hr className="mx-2 mb-2" />
-=======
-        <div>a</div>
-        <div>a</div>
-      </div>
->>>>>>> a8e3e9e3 (feat: notification bell icon added with badge)
     </div>
   );
 };

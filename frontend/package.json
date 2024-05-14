@@ -12,27 +12,16 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     "@headlessui/react": "^1.7.19",
-=======
->>>>>>> a8e3e9e3 (feat: notification bell icon added with badge)
-=======
     "@headlessui/react": "^1.7.19",
->>>>>>> 40c0594e (feat: redesigned drawer with headless UI disclosure component)
     "@mui/base": "5.0.0-beta.40",
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@mui/x-date-pickers": "^7.2.0",
-<<<<<<< HEAD
-=======
     "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
->>>>>>> 133dce66 (feat: primary button component created)
     "autoprefixer": "^10.4.19",
     "chart.js": "^4.4.2",
-=======
     "autoprefixer": "^10.4.19",
     "axios": "^1.6.8",
     "dayjs": "^1.11.10",

@@ -104,57 +104,44 @@ const Drawer: React.FC = () => {
           })}
         </div>
       </div>
-<<<<<<< HEAD
-     */}
 
-      <Disclosure as="nav">
-<<<<<<< HEAD
+      {/* <Disclosure as="nav">
         <Disclosure.Button className="absolute top-5 right-10 cursor-pointer peer inline-flex focus:outline-none lg:hidden">
-=======
-        <Disclosure.Button className="absolute top-5 right-4 cursor-pointer peer inline-flex focus:outline-none lg:hidden">
->>>>>>> 40c0594e (feat: redesigned drawer with headless UI disclosure component)
           <MenuIcon />
-        </Disclosure.Button>
+        </Disclosure.Button> */}
 
-        <div
-          // className={`px-10 py-12 bg-white rounded-r-2xl w-[300px]  fixed top-0 bottom-0 overflow-y-auto  `}
-          className=" px-10 py-12 w-[300px] h-screen bg-white z-20 fixed top-0 -left-[300px] lg:w-70 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200"
-        >
-<<<<<<< HEAD
-=======
-          {/* <div className="lg:hidden flex justify-end">
+      <div
+        // className={`px-10 py-12 bg-white rounded-r-2xl w-[300px]  fixed top-0 bottom-0 overflow-y-auto  `}
+        className=" px-10 py-12 w-[300px] h-screen bg-white z-20 fixed top-0 -left-[300px] lg:w-70 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200"
+      >
+        {/* <div className="lg:hidden flex justify-end">
             <CloseIcon className="cursor-pointer" />
           </div> */}
->>>>>>> 40c0594e (feat: redesigned drawer with headless UI disclosure component)
-          <div className="flex flex-col items-center justify-center">
-            <img src={logo} className="h-36"></img>
-            <h1 className="text-[#F580AB] text-2xl font-medium	">
-              Materny Care
-            </h1>
-          </div>
-
-          <div className="mt-10 flex flex-col space-y-8 text-[#666666] ">
-            {navLinks.map((item, index) => {
-              const match = useMatch(item.path);
-
-              return (
-                <NavLink to={item.path} key={index}>
-                  <button
-                    className={`flex items-center space-x-2 py-3 px-3 rounded-xl w-full ${
-                      match ? "text-[#0D99FF] bg-[#CAE9FF]" : ""
-                    }`}
-                  >
-                    <item.icon />
-                    <span className="pl-1 ">{item.name}</span>
-                  </button>
-                </NavLink>
-              );
-            })}
-          </div>
+        <div className="flex flex-col items-center justify-center">
+          <img src={logo} className="h-36"></img>
+          <h1 className="text-[#F580AB] text-2xl font-medium	">Materny Care</h1>
         </div>
-      </Disclosure>
-=======
->>>>>>> 9746e76b (feat:headlessui drawer removed and flowbite drawer added)
+
+        <div className="mt-10 flex flex-col space-y-8 text-[#666666] ">
+          {navLinks.map((item, index) => {
+            const match = useMatch(item.path);
+
+            return (
+              <NavLink to={item.path} key={index}>
+                <button
+                  className={`flex items-center space-x-2 py-3 px-3 rounded-xl w-full ${
+                    match ? "text-[#0D99FF] bg-[#CAE9FF]" : ""
+                  }`}
+                >
+                  <item.icon />
+                  <span className="pl-1 ">{item.name}</span>
+                </button>
+              </NavLink>
+            );
+          })}
+        </div>
+      </div>
+      {/* </Disclosure> */}
     </div>
   );
 };
