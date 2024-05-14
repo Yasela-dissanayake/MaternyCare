@@ -5,7 +5,7 @@ import RightBar from "../components/RightBar";
 
 const BaseLayout = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 ">
+    <div className="flex bg-[#F5F5F5]">
       <Drawer />
       <Outlet />
       <RightBar />

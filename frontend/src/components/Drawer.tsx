@@ -1,5 +1,38 @@
 import logo from "../assets/images/logo.png";
 import { navLinks } from "../data/Data";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { useMatch } from "react-router-dom";
+
+const Drawer = () => {
+  return (
+    <div className="px-10 py-12 flex flex-col bg-white rounded-r-2xl w-1/5">
+      <div className="flex flex-col items-center justify-center">
+        <img src={logo} className="h-36"></img>
+        <h1 className="text-[#F580AB] text-2xl font-medium	">Materny Care</h1>
+      </div>
+
+      <div className="mt-10 flex flex-col space-y-8 text-[#666666] ">
+        {navLinks.map((item, index) => {
+          const match = useMatch(item.path);
+
+          return (
+            <NavLink to={item.path} key={index}>
+              <button
+                className={`flex items-center space-x-2 py-3 px-3 rounded-xl w-full ${
+                  match ? "text-[#0D99FF] bg-[#CAE9FF]" : ""
+                }`}
+              >
+                <item.icon />
+                <span className="pl-1 ">{item.name}</span>
+              </button>
+            </NavLink>
+          );
+        })}
+      </div>
+    </div>
+  );
+=======
 import { NavLink } from "react-router-dom";
 import { useMatch } from "react-router-dom";
 
@@ -136,62 +169,3 @@ const Drawer: React.FC = () => {
 };
 
 export default Drawer;
-
-// import { MenuIcon } from "../assets/icons/Icons";
-// import { Disclosure } from "@headlessui/react";
-// import { IconButton } from "@mui/material";
-
-// const Drawer = () => {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   return (
-//     <div>
-//       <Disclosure
-//         as="nav"
-//         // onAuxClick={(event: React.MouseEvent<HTMLElement>) =>
-//         //   setIsOpen(!isOpen)
-//         // }
-//       >
-//         <Disclosure.Button
-//           onClick={() => setIsOpen(!isOpen)}
-//           className="absolute top-5 right-10 cursor-pointer peer inline-flex focus:outline-none lg:hidden"
-//         >
-//           <MenuIcon sx={{ width: "40px", height: "40px" }} />
-//         </Disclosure.Button>
-
-//         <div
-//           // className={`px-10 py-12 bg-white rounded-r-2xl w-[300px]  fixed top-0 bottom-0 overflow-y-auto  `}
-//           className=" px-10 py-12 w-[300px] h-screen bg-white z-20 fixed top-0 -left-[300px] lg:w-70 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200"
-//         >
-// <div className="flex flex-col items-center justify-center">
-//   <img src={logo} className="h-36"></img>
-//   <h1 className="text-[#F580AB] text-2xl font-medium	">
-//     Materny Care
-//   </h1>
-// </div>
-
-//           <div className="mt-10 flex flex-col space-y-8 text-[#666666] ">
-//             {navLinks.map((item, index) => {
-//               const match = useMatch(item.path);
-
-//               return (
-//                 <NavLink to={item.path} key={index}>
-//                   <button
-//                     className={`flex items-center space-x-2 py-3 px-3 rounded-xl w-full ${
-//                       match ? "text-[#0D99FF] bg-[#CAE9FF]" : ""
-//                     }`}
-//                   >
-//                     <item.icon />
-//                     <span className="pl-1 ">{item.name}</span>
-//                   </button>
-//                 </NavLink>
-//               );
-//             })}
-//           </div>
-//         </div>
-//       </Disclosure>
-//     </div>
-//   );
-// };
-
-// export default Drawer;

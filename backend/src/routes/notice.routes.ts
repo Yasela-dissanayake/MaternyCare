@@ -1,4 +1,7 @@
 import { Router } from "express";
+
+const noticeRoutes = Router();
+
 import {
   createNotice,
   deleteNotice,

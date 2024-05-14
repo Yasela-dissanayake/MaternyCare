@@ -18,7 +18,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Add types */
+    "types": ["swiper"] // Include Swiper's types
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

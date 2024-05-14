@@ -4,6 +4,9 @@ import LandingPage from "./views/LandingPage";
 import Login from "./views/Login";
 import Registration from "./views/Registration";
 import Dashboard from "./views/Dashboard";
+import Notices from "./views/Notices";
+
+
 
 // You can add your routes here
 // Add a baselayout too if needed
@@ -44,6 +47,16 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Dashboard />,
+      },
+    ],
+  },
+  {
+    path: "/notices",
+    element: <BaseLayout />,
+    children: [
+      {
+        index: true,
+        element: <Notices />,
       },
     ],
   },

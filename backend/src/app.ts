@@ -29,7 +29,6 @@ export class App {
     this.app.use(express.json());
   }
 
-
   private routes(): void {
     this.app.use("/notices", noticeRoutes);
     this.app.get("/", (req, res) => {
@@ -39,7 +38,7 @@ export class App {
           new HttpResponse(
             Code.OK,
             Status.OK,
-            "Welcome to the MaternyCare api v1.0"
+            "Welcome to the notices api v1.0"
           )
         );
     });
