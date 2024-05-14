@@ -1,6 +1,3 @@
-import React from "react";
-import MUIResponsiveDrawer from "../components/MUIResponsiveDrawer";
-import RightBar from "../components/RightBar";
 import PrimaryButton from "../components/PrimaryButton";
 
 const LandingPage = () => {
