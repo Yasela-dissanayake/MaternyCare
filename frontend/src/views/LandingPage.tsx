@@ -1,3 +1,4 @@
+import PrimaryButton from "../components/PrimaryButton";
 import React from "react";
 import logo from "../assets/images/logo.png";
 import Carousel from "../components/Carousel";
@@ -36,9 +37,5 @@ const LandingPage = () => {
         
       </div>
 
-  
-    </div>
-  );
-};
 
 export default LandingPage;
