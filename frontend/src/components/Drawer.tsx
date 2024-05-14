@@ -105,18 +105,7 @@ const Drawer: React.FC = () => {
         </div>
       </div>
 
-      {/* <Disclosure as="nav">
-        <Disclosure.Button className="absolute top-5 right-10 cursor-pointer peer inline-flex focus:outline-none lg:hidden">
-          <MenuIcon />
-        </Disclosure.Button> */}
-
-      <div
-        // className={`px-10 py-12 bg-white rounded-r-2xl w-[300px]  fixed top-0 bottom-0 overflow-y-auto  `}
-        className=" px-10 py-12 w-[300px] h-screen bg-white z-20 fixed top-0 -left-[300px] lg:w-70 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200"
-      >
-        {/* <div className="lg:hidden flex justify-end">
-            <CloseIcon className="cursor-pointer" />
-          </div> */}
+      <div className=" px-10 py-12 w-[300px] h-screen bg-white z-20 fixed top-0 -left-[300px] lg:w-70 lg:left-0 peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
         <div className="flex flex-col items-center justify-center">
           <img src={logo} className="h-36"></img>
           <h1 className="text-[#F580AB] text-2xl font-medium	">Materny Care</h1>
@@ -141,7 +130,6 @@ const Drawer: React.FC = () => {
           })}
         </div>
       </div>
-      {/* </Disclosure> */}
     </div>
   );
 };
