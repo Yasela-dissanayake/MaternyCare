@@ -1,8 +1,0 @@
-{
-	"dependencies": {
-		"@mui/icons-material": "^5.15.15",
-		"@mui/material": "^5.15.15",
-		"@emotion/styled": "^11.11.5",
-		"@emotion/react": "^11.11.4"
-	}
-}
