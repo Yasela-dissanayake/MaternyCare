@@ -12,7 +12,7 @@ const Dashboard = () => {
   return (
     <div className="mx-11 my ">
       <div className="flex justify-between ml-4 mt-7">
-        <p>
+        <p className="hidden lg:block">
           Pages <span> / Dashboard</span>
         </p>
 
@@ -26,8 +26,11 @@ const Dashboard = () => {
           />
         </div>
       </div>
-      <h1 className="mt-9 mb-4">Dashboard Overview</h1>
-      <div className="h-44 px-8 py-5 text-white bg-[#BA97FE] rounded-2xl mb-8">
+      <h1 className="mt-9 mb-4 hidden lg:block">Dashboard Overview</h1>
+      <h1 className="text-center text-3xl text-[#0D99FF] lg:hidden">
+        Dashboard
+      </h1>
+      <div className="mt-14 lg:mt-0 h-44 px-8 py-5 text-white bg-[#BA97FE] rounded-2xl mb-8">
         <h1 className="mb-2">
           Hello <span className="font-semibold">Ushani,</span>
         </h1>
