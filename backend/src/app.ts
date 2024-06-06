@@ -5,6 +5,7 @@ import { Code } from "./enum/code.enum";
 import { HttpResponse } from "./domain/response";
 import { Status } from "./enum/status.enum";
 import noticeRoutes from "./routes/notice.routes";
+import { AppDataSource } from "./config/orm.config";
 
 export class App {
   private readonly app: Application;
@@ -20,9 +21,18 @@ export class App {
   }
 
   listen(): void {
-    this.app.listen(this.port);
-    console.info(`${this.APPLICATION_RUNNING} ${ip.address()}:${this.port}`);
+    // Initialize the DataSource
+    AppDataSource.initialize()
+      .then(() => {
+        console.log("Data Source has been initialized!");
+        this.app.listen(this.port);
+        console.info(`${this.APPLICATION_RUNNING} ${ip.address()}:${this.port}`);
+      })
+      .catch((err) => {
+        console.error("Error during Data Source initialization:", err);
+      });
   }
+
 
   private middlewares(): void {
     this.app.use(cors({ origin: "*" }));
@@ -31,7 +41,7 @@ export class App {
 
 
   private routes(): void {
-    this.app.use("/notices", noticeRoutes);
+    // this.app.use("/notices", noticeRoutes);
     this.app.get("/", (req, res) => {
       res
         .status(Code.OK)
